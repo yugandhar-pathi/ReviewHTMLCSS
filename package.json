@@ -1,0 +1,20 @@
+{
+  "name": "ReviewHTMLCSS",
+  "version": "1.0.0",
+  "description": "Review HTML and CSS concepts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yugandhar-pathi/ReviewHTMLCSS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yugandhar-pathi/ReviewHTMLCSS/issues"
+  },
+  "homepage": "https://github.com/yugandhar-pathi/ReviewHTMLCSS#readme"
+}
