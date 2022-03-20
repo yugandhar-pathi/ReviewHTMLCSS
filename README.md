@@ -5,7 +5,7 @@ Review HTML and CSS concepts
 #### `HTML`
 
 - Basci HTMl Tags -
-  - a
+  - a - href
   - br
   - input - type = text, password, button, date, radio
   - button
@@ -26,6 +26,9 @@ Review HTML and CSS concepts
   - video
   - label
 - iframe
+
+#### `HTML & JavaScript`
+
 - Handle user events with Javascript
   - button event
   - input events
@@ -41,7 +44,7 @@ Review HTML and CSS concepts
 - Cypress tests
 - Mock Server - JSON server, mirage.
 
-#### `CSS`
+#### `HTML & CSS`
 
 - width & height
 - border
