@@ -16,41 +16,22 @@ let addStudentFields = () => {
 
 }
 
-const clickLiOne = () => {
-    const dialogOne = document.getElementById('dialogOne')
+const deleteLiItem = (element) => {
+    element.parentNode.remove()
+}
+
+const showDialog = (ele) => {
+    let dialogOne = document.getElementById('diId')
+    let dialogOneDiv = document.getElementById('diDivId')
+    dialogOneDiv.innerHTML += ele.innerHTML
     dialogOne.showModal()
 }
-const closeDialogOne = () => {
+
+const closeDia = () => {
+    let dialogOne = document.getElementById('diId')
+    let dialogOneDiv = document.getElementById('diDivId')
+    dialogOneDiv.innerHTML = ""
     dialogOne.close()
 }
 
-const clickLiTwo = () => {
-    const dialogTwo = document.getElementById('dialogTwo')
-    dialogTwo.showModal()
-}
-const closeDialogTwo = () => {
-    dialogTwo.close()
-}
-
-const clickLiThree = () => {
-    const dialogThree = document.getElementById('dialogThree')
-    dialogThree.showModal()
-}
-const closeDialogThree = () => {
-    dialogThree.close()
-}
-
-const deleteFieldOne = () => {
-    document.getElementById('liIdOne').parentNode.removeChild(liIdOne)
-}
-const deleteFieldTwo = () => {
-    document.getElementById('liIdTwo').parentNode.removeChild(liIdTwo)
-}
-const deleteFieldThree = () => {
-    document.getElementById('liIdThree').parentNode.removeChild(liIdThree)
-}
-
 document.getElementById('addButton').addEventListener('click', addStudentFields)
-document.getElementById('deleteFieldOne').addEventListener('click', deleteFieldOne)
-document.getElementById('deleteFieldTwo').addEventListener('click', deleteFieldTwo)
-document.getElementById('deleteFieldThree').addEventListener('click', deleteFieldThree)

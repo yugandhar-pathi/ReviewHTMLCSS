@@ -5,56 +5,34 @@
     <header>
         <button id="addButton">Add</button>
     </header>
-    <ul id="ulId">
-        <div id="liIdOne">
-            <li onclick="clickLiOne()">
-                <img src="../Images/20220321113235643.jpg" alt="Reshitha" height="170px"></img><br>
-                <b>Name : Reshitha</b><br>
-                <b>Grade : 2nd Grade</b>
-            </li>
-            <button id="deleteFieldOne">Delete</button>
-        </div>
+    <ul>
+        <li onclick="showDialog(this)">
+            <img src="../Images/20220321113235643.jpg" alt="Reshitha" height="170px"></img><br>
+            <b>Name : Reshitha</b><br>
+            <b>Grade : 2nd Grade</b>
+            <button onclick="deleteLiItem(this)">Delete</button>
+        </li>
 
-        <dialog id="dialogOne">
-            <h1> <img src="../Images/20220321113235643.jpg" alt="Reshitha" height="170px"></img><br>
-                <b>Name : Reshitha</b><br>
-                <b>Grade : 2nd Grade</b>
-                <button onclick="closeDialogOne()">close</button>
-            </h1>
-        </dialog>
         </br>
-        <div id="liIdTwo">
-            <li onclick="clickLiTwo()">
-                <img src="../Images/20220321113532064.jpg" alt="Skandhana" height="170px"></img><br>
-                <b>Name : Skandhana</b><br>
-                <b>Grade : 1st Grade</b>
-            </li>
-            <button id="deleteFieldTwo">Delete</button>
-        </div>
-        <dialog id="dialogTwo">
-            <h1>
-                <img src="../Images/20220321113532064.jpg" alt="Skandhana" height="170px"></img><br>
-                <b>Name : Skandhana</b><br>
-                <b>Grade : 1st Grade</b>
-                <button onclick="closeDialogTwo()">Close</button>
-            </h1>
+
+        <li onclick="showDialog(this)">
+            <img src="../Images/20220321113532064.jpg" alt="Skandhana" height="170px"></img><br>
+            <b>Name : Skandhana</b><br>
+            <b>Grade : 1st Grade</b>
+            <button onclick="deleteLiItem(this)">Delete</button>
+        </li>
+
+        <li onclick="showDialog(this)">
+            <img src="../Images/20220321113910381.jpg" alt="Kalyani" height="170px"></img><br>
+            <b>Name : Kalyani</b><br>
+            <b>Grade : Kinder Garden</b>
+            <button onclick="deleteLiItem(this)">Delete</button>
+        </li>
+        <dialog id="diId">
+            <div id="diDivId"></div>
+            <button onclick="closeDia()">close</button>
         </dialog>
-        <div id="liIdThree">
-            <li onclick="clickLiThree()">
-                <img src="../Images/20220321113910381.jpg" alt="Kalyani" height="170px"></img><br>
-                <b>Name : Kalyani</b><br>
-                <b>Grade : Kinder Garden</b>
-            </li>
-            <button id="deleteFieldThree">Delete</button>
-        </div>
-        <dialog id="dialogThree">
-            <h1>
-                <img src="../Images/20220321113910381.jpg" alt="Kalyani" height="170px"></img><br>
-                <b>Name : Kalyani</b><br>
-                <b>Grade : Kinder Garden</b>
-                <button onclick="closeDialogThree()">Close</button>
-            </h1>
-        </dialog>
+
     </ul>
     <dialog id="dialogId">
         <label for="nameId">Name</label>
