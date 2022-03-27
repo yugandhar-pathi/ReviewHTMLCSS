@@ -2,24 +2,46 @@
 <html>
 
 <body>
+    <header>
+        <button id="addButton">Add</button>
+    </header>
     <ul>
-        <li>
+        <li onclick="showDialog(this)">
             <img src="../Images/20220321113235643.jpg" alt="Reshitha" height="170px"></img><br>
             <b>Name : Reshitha</b><br>
             <b>Grade : 2nd Grade</b>
+            <button onclick="deleteLiItem(this)">Delete</button>
         </li>
+
         </br>
-        <li>
+
+        <li onclick="showDialog(this)">
             <img src="../Images/20220321113532064.jpg" alt="Skandhana" height="170px"></img><br>
             <b>Name : Skandhana</b><br>
             <b>Grade : 1st Grade</b>
+            <button onclick="deleteLiItem(this)">Delete</button>
         </li>
-        <li>
+
+        <li onclick="showDialog(this)">
             <img src="../Images/20220321113910381.jpg" alt="Kalyani" height="170px"></img><br>
             <b>Name : Kalyani</b><br>
             <b>Grade : Kinder Garden</b>
+            <button onclick="deleteLiItem(this)">Delete</button>
         </li>
+        <dialog id="diId">
+            <div id="diDivId"></div>
+            <button onclick="closeDia()">close</button>
+        </dialog>
+
     </ul>
+    <dialog id="dialogId">
+        <label for="nameId">Name</label>
+        <input id="nameId" type="text">
+        <label for="gradeId">Grade</label>
+        <input id="gradeId" type="text">
+        <button id="addStudent">Add student</button>
+    </dialog>
+    <script src="./career.js"></script>
 </body>
 
 </html>
