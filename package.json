@@ -4,7 +4,9 @@
   "description": "Review HTML and CSS concepts",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/yugandhar-pathi/ReviewHTMLCSS/issues"
   },
-  "homepage": "https://github.com/yugandhar-pathi/ReviewHTMLCSS#readme"
+  "homepage": "https://github.com/yugandhar-pathi/ReviewHTMLCSS#readme",
+  "dependencies": {
+    "cypress": "^9.5.2"
+  }
 }
