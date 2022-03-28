@@ -31,29 +31,33 @@ let studentArray = [
     }
 ]
 
-
-studentArray.forEach(ele => {
-    let showDialogBox = () => {
-        let dialog = document.getElementById('dialogId')
-        let diaDiv = document.getElementById('diDivId')
-        let nodeGrade = document.createTextNode(`grade : ${ele.grade} `)
-        let nodeMarks = document.createTextNode(`marks : ${ele.marks}`)
-        diaDiv.appendChild(nodeGrade)
-        diaDiv.appendChild(nodeMarks)
-        dialog.appendChild(diaDiv)
-        dialog.showModal()
-        let closeDialog = () => {
-            dialog.close()
-            diaDiv.innerHTML = ""
-        }
-        document.getElementById('closeId').addEventListener('click', closeDialog)
+let showDialogBox = (event) => {
+    let id = event.target.id;
+    let student = studentArray[id]
+    let dialog = document.getElementById('dialogId')
+    let diaDiv = document.getElementById('diDivId')
+    let nodeGrade = document.createTextNode(`grade : ${student.grade} `)
+    let nodeMarks = document.createTextNode(`marks : ${student.marks}`)
+    diaDiv.appendChild(nodeGrade)
+    diaDiv.appendChild(nodeMarks)
+    dialog.appendChild(diaDiv)
+    dialog.showModal()
+    let closeDialog = () => {
+        dialog.close()
+        diaDiv.innerHTML = ""
     }
+    document.getElementById('closeId').addEventListener('click', closeDialog)
+}
 
+// displays list of students
+studentArray.forEach((ele, index) => {
     let displayList = document.getElementById('ulId')
-    let newLi = document.createElement('li')
+    let newLi = document.createElement('li') //<li></li>
+    newLi.id = index // <li id="0"></li>
     let nodeName = document.createTextNode(`name : ${ele.name}, `)
     let nodeAge = document.createTextNode(`age: ${ele.age}`)
     newLi.appendChild(nodeName)
     newLi.appendChild(nodeAge)
-    displayList.appendChild(newLi).addEventListener('click', showDialogBox)
+    newLi.addEventListener('click', showDialogBox)
+    displayList.appendChild(newLi)
 })
