@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "webpack": "webpack",
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,14 @@
     "url": "https://github.com/yugandhar-pathi/ReviewHTMLCSS/issues"
   },
   "homepage": "https://github.com/yugandhar-pathi/ReviewHTMLCSS#readme",
-  "dependencies": {
-    "cypress": "^9.5.2"
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.4",
+    "cypress": "^9.5.3",
+    "miragejs": "^0.1.43",
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2"
   }
 }
