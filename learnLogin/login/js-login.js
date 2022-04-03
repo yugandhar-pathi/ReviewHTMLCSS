@@ -15,6 +15,8 @@ const loginHandler = (event) => {
     }
 }
 
+fetch("/api/students").then(res => res.json()).then(res=> console.log(res))
+
 const element = document.getElementById("loginButton")
 element.addEventListener("click", loginHandler)
 

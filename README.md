@@ -41,7 +41,9 @@ Review HTML and CSS concepts
 - DOM Manipulation
   - add/insert/update/remove elements
 - fetch API
-- Cypress tests
+- `Cypress tests`
+  - cmd to run cypress tests - `npm run cypress:run`
+  - cmd to debug cypress tests - `npm run cypress:open`
 - Mock Server - JSON server, mirage.
 
 #### `HTML & CSS`
