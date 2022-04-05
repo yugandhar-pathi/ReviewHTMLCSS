@@ -13,3 +13,11 @@ it('Redirect to Career page', () => {
             cy.visit(href)
         })
 })
+
+it('Redirect to student page', () => {
+    cy.visit('../../learnHtmlTags/learnTags.html')
+    cy.get('#studentPageId').should('have.attr', 'href')
+        .then(href => {
+            cy.visit(href)
+        })
+})
